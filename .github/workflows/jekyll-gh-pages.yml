@@ -29,6 +29,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: rearrange md files
+        run: |
+            mkdir ${{github.event.repository.name}}
+            mv README.md ${{github.event.repository.name}}/README.md
+            curl -X GET https://gist.githubusercontent.com/arnos-stuff/c6a148fcb6
+26304d8ae3f19838600131/raw/e3dfdf99cd0025403515cc7f3a1e6a151cd3be39/package-readme.md > README.md
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
