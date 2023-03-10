@@ -100,6 +100,7 @@ def uploadFromStdin(param: str = None) -> str:
 
 def download(url: str) -> str:
     """Downloads a file from ix.io and returns the contents."""
+    url = url.strip()
     response = requests.get(url)
     return response.text
 
