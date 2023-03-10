@@ -23,7 +23,7 @@ baseurl: /ix
 show_downloads: true
 
 github:
-  is_project_page: true
+  is_project_page: false
   pypi_url: https://pypi.org/project/ix-cli/
   tar_url: https://pypi.org/project/ix-cli/#files
   zip_url: https://pypi.org/project/ix-cli/#files
