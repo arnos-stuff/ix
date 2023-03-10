@@ -31,13 +31,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
       - name: rearrange md files
         run: |
             mkdir ${{github.event.repository.name}}
             mv README.md ${{github.event.repository.name}}/README.md
             curl -X GET "$JSDELIVR/$MAINFILE" > README.md
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        with:
+          generator_config_file: _config.yaml
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
