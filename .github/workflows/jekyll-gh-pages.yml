@@ -38,6 +38,7 @@ jobs:
         uses: actions/configure-pages@v3
         with:
           generator_config_file: _config.yaml
+          enablement: true
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
