@@ -1,3 +1,8 @@
+---
+title: xi-cli
+description: A rich CLI template for pastebin CLI tools
+---
+
 # A rich CLI template for pastebin CLI tools
 
 ix is a command line interface for [ix.io](https://ix.io), a pastebin service.
