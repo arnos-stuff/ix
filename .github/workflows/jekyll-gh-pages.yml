@@ -6,6 +6,7 @@ env:
   MAINFILE: pages/README.md
   WEBSITE: https://pkg.arnov.dev/
   WEBROOT: ${{ github.event.repository.name }}
+  WEBSITEFULL: https://pkg.arnov.dev/${{ github.event.repository.name }}
 
 on:
   # Runs on pushes targeting the default branch
@@ -49,7 +50,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "$WEBSITE/$WEBROOT"
+      url: ${{ WEBSITEFULL }}
     runs-on: ubuntu-latest
     needs: build
     steps:
