@@ -31,11 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: rearrange md files
-        run: |
-            mkdir ${{github.event.repository.name}}
-            mv README.md ${{github.event.repository.name}}/README.md
-            curl -X GET "$JSDELIVR/$MAINFILE" > README.md
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
