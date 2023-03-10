@@ -7,14 +7,10 @@ include:
   - README.md
   - LICENSE
 
-theme: jekyll-theme-cayman
-
 title: ix-cli
 description: > # this means to ignore newlines until "baseurl:"
   ix-cli is a command line tool for interacting with the ix.io pastebin service.
 
-host: https://pkg.arnov.dev
-base_path: /ix
 enablement: true
 show_downloads: true
 
