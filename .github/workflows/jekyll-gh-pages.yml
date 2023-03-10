@@ -50,7 +50,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: $WEBSITEFULL
+      url: https://pkg.arnov.dev/${{ github.event.repository.name }}
     runs-on: ubuntu-latest
     needs: build
     steps:
