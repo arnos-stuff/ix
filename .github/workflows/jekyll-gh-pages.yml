@@ -1,6 +1,10 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
+env:
+  JSDELIVR: https://cdn.jsdelivr.net/gh/arnos-stuff/files@latest
+  MAINFILE: pages/README.md
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -33,9 +37,7 @@ jobs:
         run: |
             mkdir ${{github.event.repository.name}}
             mv README.md ${{github.event.repository.name}}/README.md
-            curl -X GET https://gist.githubusercontent.com/arnos-stuff/c6a148fcb6
-26304d8ae3f19838600131/raw/e3dfdf99cd0025403515cc7f3a1e6a151cd3be39/package-readme.md > README.md
-
+            curl -X GET "$JSDELIVR/$MAINFILE" > README.md
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
