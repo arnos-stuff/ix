@@ -1,6 +1,9 @@
 ---
 title: xi-cli
 description: A rich CLI template for pastebin CLI tools
+pypi_url: https://pypi.org/project/ix-cli/#files
+tar_url: https://pypi.org/project/ix-cli/#files
+github_url: https://github.com/arnos-stuff/ix
 ---
 
 # A rich CLI template for pastebin CLI tools
