@@ -15,6 +15,14 @@ typer = {extras = ["all"], version = "^0.7.0"}
 [tool.poetry.scripts]
 ix = "ix_cli.cli:app"
 
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.7"
+mike = "^1.1.2"
+pillow = "^9.5.0"
+cairosvg = "^2.7.0"
+mkdocs-glightbox = "^0.3.3"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
