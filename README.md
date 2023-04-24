@@ -1,3 +1,11 @@
+---
+title: xi-cli
+description: A rich CLI template for pastebin CLI tools
+pypi_url: https://pypi.org/project/ix-cli/#files
+tar_url: https://pypi.org/project/ix-cli/#files
+github_url: https://github.com/arnos-stuff/ix
+---
+
 # A rich CLI template for pastebin CLI tools
 
 ix is a command line interface for [ix.io](https://ix.io), a pastebin service.
